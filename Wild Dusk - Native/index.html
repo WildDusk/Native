@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="device-width, initial-scale:1" />
+    <link rel="shortcut icon" href="./libs/wd/icon/icon.256.png" />
+    <link rel="stylesheet" href="./libs/ext/framework7.ios.min.css" />
+    <link rel="stylesheet" href="./libs/ext/framework7.ios.colors.min.css" />
+    <link rel="stylesheet" href="./libs/ext/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./libs/wd/wd.css" />
+    <title>Wild Dusk</title>
+</head>
+
+<body>
+    <div class="panel panel-left panel-cover">
+        <div class="view panel-view"></div>
+    </div>
+    <div class="views tabs toolbar-fixed">
+        <!-- Tab 1 - View 1, active by default -->
+        <div id="wd-page-index" class="view tab active">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center">Wild Dusk</div>
+                </div>
+            </div>
+            <div class="pages navbar-fixed">
+                <div data-page="index" class="page">
+                    <div class="page-content pull-to-refresh-content" data-ptr-distance="55">
+                        <!-- Default pull to refresh layer-->
+                        <div class="pull-to-refresh-layer">
+                            <div class="preloader"></div>
+                            <div class="pull-to-refresh-arrow"></div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">New Releases:</div>
+                            <div class="card-content">
+                                <div class="list-block media-list">
+                                    <ul>
+                                        <li>
+                                            <a class="item-content item-link" onclick="versionPage('Submarine');">
+                                                <div class="item-media">
+                                                    <img src="./libs/wd/icon/vrs/Submarine/icon.128.png" width="44">
+                                                </div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Submarine</div>
+                                                    </div>
+                                                    <div class="item-subtitle version-name">Version 1.16</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="item-content item-link" onclick="versionPage('Feather');">
+                                                <div class="item-media">
+                                                    <img src="./libs/wd/icon/vrs/Feather/icon.128.png" width="44">
+                                                </div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Feather</div>
+                                                    </div>
+                                                    <div class="item-subtitle version-name">Version 1.15</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="item-content item-link" onclick="versionPage('Marble');">
+                                                <div class="item-media">
+                                                    <img src="./libs/wd/icon/vrs/Marble/icon.128.png" width="44">
+                                                </div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Marble</div>
+                                                    </div>
+                                                    <div class="item-subtitle version-name">Version 1.1029</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span>January 15, 2017</span>
+                                <span><a class="link" href="">Ver Todo</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tab 2 - View 2 -->
+        <div id="wd-page-settings" class="view tab">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center">Ajustes</div>
+                </div>
+            </div>
+            <div class="pages navbar-fixed">
+                <div data-page="settings" class="page">
+                    <div class="page-content">
+                        <div class="content-block">
+                            <p>This is view 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tab 2 - View 3 -->
+        <div id="wd-page-user" class="view tab">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center">Mi Cuenta</div>
+                </div>
+            </div>
+            <div class="pages navbar-fixed">
+                <div data-page="user" class="page">
+                    <div class="page-content">
+                        <div class="content-block">
+                            <p>This is view 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tab 2 - View 3 -->
+        <div id="wd-page-info" class="view tab">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center">Informacion</div>
+                </div>
+            </div>
+            <div class="pages navbar-fixed">
+                <div data-page="info" class="page">
+                    <div class="page-content">
+                        <div class="list-block">
+                            <ul>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media">
+                                            <img src="./libs/wd/icon/icon.64.png" width="32" />
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Item title</div>
+                                            <div class="item-after">Label</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media">
+                                            <img src="./libs/wd/icon/icon.64.png" width="32" />
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Item with badge</div>
+                                            <div class="item-after"><span class="badge">5</span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media">
+                                            <img src="./libs/wd/icon/icon.64.png" width="32" />
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Another item</div>
+                                            <div class="item-after">Another label</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="list-block-label">List block label text goes here</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tab 2 - View 3 -->
+        <div id="wd-page-other" class="view tab">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center">Pagina Extra</div>
+                </div>
+            </div>
+            <div class="pages navbar-fixed">
+                <div data-page="other" class="page">
+                    <div class="page-content">
+                        <div class="content-block">
+                            <p>Esta pagina aun esta siendo construida!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Bottom Navbar   -->
+        <div class="toolbar tabbar">
+            <div class="toolbar-inner">
+                <a href="#wd-page-settings" class="tab-link">
+                    <i class="icon fa fa-cog">
+                    </i>
+                </a>
+                <a href="#wd-page-info" class="tab-link">
+                    <i class="icon fa fa-info">
+                        <span class="badge bg-red">5</span>
+                    </i>
+                </a>
+                <a href="#wd-page-index" class="tab-link active">
+                    <i class="icon fa fa-circle-o-notch"></i>
+                </a>
+                <a href="#wd-page-other" class="tab-link">
+                    <i class="icon fa fa-square-o"></i>
+                </a>
+                <a href="#wd-page-user" class="tab-link">
+                    <i class="icon fa fa-user-circle-o">
+                        <span class="badge bg-red">15</span>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="view popup-view"></div>
+    </div>
+    <script type="text/template" id="versionPage">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="center">My Page</div>
+            </div>
+        </div>
+        <div class="page" data-page="js-generate-version">
+            <div class="page-content">
+                <p>Here comes page content</p>
+            </div>
+        </div>
+    </script>
+    <script src="./libs/ext/framework7.min.js"></script>
+    <script src="./libs/wd/wd.js"></script>
+    <script src="./libs/wd/database.js"></script>
+    <script src="./libs/wd/controllers/options/animations/anims.js"></script>
+    <script src="./libs/wd/controllers/views/generate.js"></script>
+</body>
+
+</html>
