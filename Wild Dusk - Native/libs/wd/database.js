@@ -76,7 +76,6 @@ var LocalDb = {
           Beta: 0
         },
         vParse: "1.16",
-        vInfo: "",
         getDay: function () {
           var d = new Date();
           d.setDate(17);
@@ -86,8 +85,8 @@ var LocalDb = {
           return n;
         },
         features: ["Mejoras en esta actualizacion:", "Informacion almacenada en la base de datos.", "Mejoras visuales del render.", "Reconstruccion de base de datos.", "Reconstruccion de controladores.", "Reconstruccion de funcionalidades."],
-        changes: [],
-        info: []
+        changes: ["- Nueva UI.", "Estabilizacion de la base de datos.", "Mejoras en Controladores.", "Nuevas funciones.", "Render mejorado.", "Compatibilidad para APIs menores de 18."],
+        info: ["Esta actualizacion ha sido rediseñada para destruir todas las versiones anteriores, generando una vista completamente nueva y compatible para versiones con API de nivel menor a 18."]
       },
       Feather: {
         vName: "Feather",
@@ -98,7 +97,6 @@ var LocalDb = {
           Beta: 0
         },
         vParse: "1.15",
-        vInfo: "",
         getDay: function () {
           var d = new Date();
           d.setDate(7);
@@ -108,8 +106,8 @@ var LocalDb = {
           return n;
         },
         features: ["Mejoras en esta actualizacion:", "Inicio de Sesion forzado.", "Nueva vista. Informacion de usuario generada en carga.", "Administracion de usuario por medio de uuid.", "Inicio de sesion requerido para ejecutar algunas funciones.", "Nuevos controladores integrados."],
-        changes: [],
-        info: []
+        changes: ["- Batch autorun.inf eliminado.", "Permisos de acceso explicitos.", "Nueva interfaz de usuario.", "Manipulacion de usuarios por medio de uuid."],
+        info: ["Esta actualizacion trae nuevas funcionalidades y mejoras en la seguridad de la aplicacion para los usuarios.", "Se les fuerza a los usuarios a iniciar sesion antes de proceder a la pagina de control de cuentas.", "Se han agregado nuevos controladores de usuarios para la manipulacion de sus actividades."]
       },
       Marble: {
         vName: "Marble",
@@ -128,9 +126,9 @@ var LocalDb = {
           var n = d.toLocaleDateString();
           return n;
         },
-        features: ["Mejoras en esta actualizacion:", "Inicio de Sesion habilitado.", "Proceso de verificacion de Usuario mejorado.", "Permisos de rangos en progreso.", "Controladores de usuario mejorados.", "Proceso de Cache introduciddo. (Beta)", "Error de notificacion reparado.", "Errores y estabilidad mejorada.", "Actualizados controladores basicos."],
-        changes: [],
-        info: []
+        features: ["Mejoras en esta actualizacion:", "Inicio de Sesion habilitado.", "Proceso de verificacion de Usuario mejorado.", "Permisos de rangos en progreso.", "Controladores de usuario mejorados.", "Proceso de Cache introducido. (Beta)", "Error de notificacion reparado.", "Errores y estabilidad mejorada.", "Actualizados controladores basicos."],
+        changes: ["- Acceso a usuarios por medio de LogIn.", "Manejo de cuentas de usuario en la base de datos.", "Controlador de eventos en usuarios.", "Almacenamiento en Cache temporal.", "Terminada la vista de usuario."],
+        info: ["La actualizacion de Usuarios! Esta actualizacion aumenta la seguridad y el manejo de usuarios, inspirado para el uso de usuarios, nuevas caracteristicas seran agregadas en las siguientes actualizaciones."]
       },
       Bucket: {
         vName: "Bucket",
@@ -150,7 +148,7 @@ var LocalDb = {
           return n;
         },
         features: ["Mejoras en esta actualizacion:", "Inicio de Sesion para Usuarios agregado.", "Funciones de Sistema habilitados.", "Administrador de errores inicializado.", "Agregadas notificaciones en la aplicacion.", "Almacenamiento en base de datos habilitado.", "Mejoras basicas en la estabilidad."],
-        changes: [],
+        changes: ["- Administracion por medio de base de datos.", ""],
         info: []
       },
       Core: {

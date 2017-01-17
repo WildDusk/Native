@@ -33,7 +33,7 @@ var Animations = {
   }
 }
 
-/* Auto trigger animatins */
+/* Auto trigger animations */
 
 var ptrContent = $$('.pull-to-refresh-content');
 ptrContent.on('ptr:pullend', function () {
@@ -44,19 +44,19 @@ ptrContent.on('ptr:pullend', function () {
     var time = i * 1000;
     var newVersion =
       '<li>' +
-      '<a class="item-content item-link" onclick="versionPage(' + LocalDb.Version.get[LocalDb.Version.get.versions[0]].vName + ');">' +
+      '<a class="item-content item-link" onclick="versionPage(' + LocalDb.Version.get[LocalDb.Version.get.all[0]].vName + ');">' +
       '<div class="item-media">' +
-      '<img src="./libs/wd/icon/vrs/' + LocalDb.Version.get[LocalDb.Version.get.versions[0]].vName + '/icon.128.png" width="44">' +
+      '<img src="./libs/wd/icon/vrs/' + LocalDb.Version.get[LocalDb.Version.get.all[0]].vName + '/icon.128.png" width="44">' +
       '</div>' +
       '<div class="item-inner">' +
       '<div class="item-title-row">' +
-      '<div class="item-title">' + LocalDb.Version.get[LocalDb.Version.get.versions[0]].vName + '</div>' +
+      '<div class="item-title">' + LocalDb.Version.get[LocalDb.Version.get.all[0]].vName + '</div>' +
       '</div>' +
-      '<div class="item-subtitle version-name">Version ' + LocalDb.Version.get[LocalDb.Version.get.versions[0]].vParse + '</div>' +
+      '<div class="item-subtitle version-name">Version ' + LocalDb.Version.get[LocalDb.Version.get.all[0]].vParse + '</div>' +
       '</div>' +
       '</a>' +
       '</li>';
-    if (LocalDb.Version.get[LocalDb.Version.get.versions[0]].vName != "Submarine") {
+    if (LocalDb.Version.get[LocalDb.Version.get.all[0]].vName != "Submarine") {
       ptrContent.find('ul').prepend(newVersion);
     }
     wd.pullToRefreshDone();

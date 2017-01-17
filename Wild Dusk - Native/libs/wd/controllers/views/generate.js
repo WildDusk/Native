@@ -7,11 +7,12 @@ function versionPage(vName) {
     var gen = {
       version: LocalDb.Version.get[vName].vParse,
       name: LocalDb.Version.get[vName].vName,
-      info: LocalDb.Version.get[vName].vInfo,
       date: LocalDb.Version.get[vName].getDay(),
-      feat: LocalDb.Version.get[vName].features.join("<br />- ")
+      feat: LocalDb.Version.get[vName].features.join("<br />- "),
+      changes: LocalDb.Version.get[vName].changes.join("<br />- "),
+      info: LocalDb.Version.get[vName].info.join("<br />- "),
+      api: LocalDb.Version.get[vName].vValue.Minor
     }
-    // HTML Content of new page:
     var showV =
       '<div class="popup popup-' + vName + '">' +
       '<div class="navbar">' +
@@ -34,14 +35,20 @@ function versionPage(vName) {
       '</div>' +
       '</div>' +
       '<div class="timeline-item">' +
-      '<div class="timeline-item-date">26 <small>DEC</small></div>' +
+      '<div class="timeline-item-date">Logs</div>' +
       '<div class="timeline-item-divider"></div>' +
       '<div class="timeline-item-content">' +
       '<div class="timeline-item-inner">' +
-      '<div class="timeline-item-time">12:33</div>' +
+      '<div class="timeline-item-time">' + '</div>' +
+      '<div class="timeline-item-title"><b>Cambios</b></div>' +
+      '<div class="timeline-item-subtitle">' + gen.changes + '</div>' +
+      '<div class="timeline-item-text">Item Text</div>' +
       '</div>' +
       '<div class="timeline-item-inner">' +
-      '<div class="timeline-item-time">15:45</div>' +
+      '<div class="timeline-item-time">' + gen.api + '</div>' +
+      '<div class="timeline-item-title">' + gen.name + '</div>' +
+      '<div class="timeline-item-subtitle">' + gen.info + '</div>' +
+      '<div class="timeline-item-text">Item Text</div>' +
       '</div>' +
       '</div>' +
       '</div>' +
