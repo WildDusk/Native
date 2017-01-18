@@ -1,9 +1,9 @@
 function versionPage(vName) {
   var show = "";
 
-  Animations.top.loading();
+  progressbar();
   if (LocalDb.Version.get[vName]) {
-    Animations.full.preloader();
+    preloader()
     var gen = {
       version: LocalDb.Version.get[vName].vParse,
       name: LocalDb.Version.get[vName].vName,
@@ -15,7 +15,7 @@ function versionPage(vName) {
     }
     send();
   } else if (LocalDb.Version.get.all[vName]) {
-    Animations.full.preloader();
+    preloader()
     var gen = {
       version: LocalDb.Version.get[LocalDb.Version.get.all[vName]].vParse,
       name: LocalDb.Version.get[LocalDb.Version.get.all[vName]].vName,
@@ -81,8 +81,8 @@ function versionPage(vName) {
 }
 
 function showAllVersion() {
-  Animations.top.loading();
-  Animations.full.preloader();
+  progressbar();
+  preloader()
   var page =
     '<div class="popup popup-allVersions" data-popup="allvrs">' +
     '<div class="navbar">' +
