@@ -1,3 +1,4 @@
+'use strict';
 var wd = new Framework7({
   cache: true,
   cacheDuration: 1000 * 60 * 10,

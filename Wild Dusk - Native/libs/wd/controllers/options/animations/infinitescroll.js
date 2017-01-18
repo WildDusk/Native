@@ -1,3 +1,5 @@
+'use strict';
+
 // Loading flag
 var loading = false;
 

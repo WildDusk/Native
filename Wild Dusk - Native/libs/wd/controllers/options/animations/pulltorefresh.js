@@ -1,3 +1,4 @@
+'use strict';
 var index = $$('.ptr-content-index.pull-to-refresh-content');
 var user = $$('.ptr-content-user.pull-to-refresh-content');
 var info = $$('.ptr-content-info.pull-to-refresh-content');

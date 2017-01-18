@@ -1,3 +1,5 @@
+'use strict';
+
 function progressbar() {
   var container = $$('body');
   if (container.children('.progressbar, .progressbar-infinite').length) return;
