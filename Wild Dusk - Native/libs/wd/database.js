@@ -6,9 +6,10 @@ var LocalDb = {
         password: "Native",
         rank: 4,
         gen: {
-          key: "",
+          key: "607678aa7d7526cbf3b3dac1651c9f72",
           uuid: "",
-          id: "0"
+          id: "0",
+          s: "m"
         }
       },
       Alexltx: {
@@ -16,9 +17,10 @@ var LocalDb = {
         password: "Alextri00",
         rank: 4,
         gen: {
-          key: "",
+          key: "317f75c6f70ce2a03cc9946b41cde563",
           uuid: "",
-          id: "1"
+          id: "1",
+          s: "m"
         }
       },
       AliciaLove14: {
@@ -26,9 +28,10 @@ var LocalDb = {
         password: "AliciaLove821",
         rank: 2,
         gen: {
-          key: "",
+          key: "d3232772321db22c403513cbd74b8df4",
           uuid: "",
-          id: "2"
+          id: "2",
+          s: "f"
         }
       },
       ChloeNozek: {
@@ -36,9 +39,10 @@ var LocalDb = {
         password: "TeAmoAlvarito7u7",
         rank: 3,
         gen: {
-          key: "",
+          key: "0c6d7a16e21a275f04a77a4e3ea9399d4",
           uuid: "",
-          id: "3"
+          id: "3",
+          s: "f"
         }
       },
       MartinaRC: {
@@ -46,9 +50,10 @@ var LocalDb = {
         password: "marturc14",
         rank: 3,
         gen: {
-          key: "",
+          key: "6943a881d2b2af1eec9194acaf6977e23",
           uuid: "",
-          id: "4"
+          id: "4",
+          s: "f"
         }
       },
       rcon: {
@@ -58,7 +63,8 @@ var LocalDb = {
         gen: {
           key: "",
           uuid: "",
-          id: "------------"
+          id: "------------",
+          s: "b"
         }
       }
     },
