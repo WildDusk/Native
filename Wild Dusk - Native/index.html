@@ -26,7 +26,7 @@
             </div>
             <div class="pages navbar-fixed">
                 <div data-page="index" class="page">
-                    <div class="page-content pull-to-refresh-content" data-ptr-distance="55">
+                    <div class="page-content ptr-content-index pull-to-refresh-content" data-ptr-distance="55">
                         <!-- Default pull to refresh layer-->
                         <div class="pull-to-refresh-layer">
                             <div class="preloader"></div>
@@ -36,7 +36,7 @@
                             <div class="card-header">New Releases:</div>
                             <div class="card-content">
                                 <div class="list-block media-list">
-                                    <ul>
+                                    <ul id="version-history">
                                         <li>
                                             <a class="item-content item-link" onclick="versionPage('Submarine');">
                                                 <div class="item-media">
@@ -81,7 +81,7 @@
                             </div>
                             <div class="card-footer">
                                 <span>January 15, 2017</span>
-                                <span><a class="link" href="">Ver Todo</a></span>
+                                <span><a class="link" href="" onclick="showAllVersion();">Ver Todo</a></span>
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                 <div data-page="settings" class="page">
                     <div class="page-content">
                         <div class="content-block">
-                            <p>This is view 2</p>
+                            <p>Esta pagina aun esta siendo construida.</p>
                         </div>
                     </div>
                 </div>
@@ -114,9 +114,14 @@
             </div>
             <div class="pages navbar-fixed">
                 <div data-page="user" class="page">
-                    <div class="page-content">
+                    <div class="page-content ptr-content-user pull-to-refresh-content" data-ptr-distance="55">
+                        <div class="pull-to-refresh-layer">
+                            <div class="preloader"></div>
+                            <div class="pull-to-refresh-arrow"></div>
+                        </div>
                         <div class="content-block">
-                            <p>This is view 3</p>
+                            <p>Esta pagina aun esta siendo construida.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -131,44 +136,19 @@
             </div>
             <div class="pages navbar-fixed">
                 <div data-page="info" class="page">
-                    <div class="page-content">
+                    <div class="page-content pull-to-refresh-content ptr-content-info" data-ptr-distance="55">
+                        <div class="pull-to-refresh-layer">
+                            <div class="preloader"></div>
+                            <div class="pull-to-refresh-arrow"></div>
+                        </div>
                         <div class="list-block">
                             <ul>
-                                <li>
-                                    <a href="#" class="item-link item-content">
-                                        <div class="item-media">
-                                            <img src="./libs/wd/icon/icon.64.png" width="32" />
-                                        </div>
-                                        <div class="item-inner">
-                                            <div class="item-title">Item title</div>
-                                            <div class="item-after">Label</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="item-link item-content">
-                                        <div class="item-media">
-                                            <img src="./libs/wd/icon/icon.64.png" width="32" />
-                                        </div>
-                                        <div class="item-inner">
-                                            <div class="item-title">Item with badge</div>
-                                            <div class="item-after"><span class="badge">5</span></div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="item-link item-content">
-                                        <div class="item-media">
-                                            <img src="./libs/wd/icon/icon.64.png" width="32" />
-                                        </div>
-                                        <div class="item-inner">
-                                            <div class="item-title">Another item</div>
-                                            <div class="item-after">Another label</div>
-                                        </div>
-                                    </a>
+                                <li class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Item 1</div>
+                                    </div>
                                 </li>
                             </ul>
-                            <div class="list-block-label">List block label text goes here</div>
                         </div>
                     </div>
                 </div>
@@ -183,9 +163,70 @@
             </div>
             <div class="pages navbar-fixed">
                 <div data-page="other" class="page">
-                    <div class="page-content">
-                        <div class="content-block">
-                            <p>Esta pagina aun esta siendo construida!</p>
+                    <!-- Search Bar with "searchbar-init" class for auto initialization -->
+                    <form class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+                        <div class="searchbar-input">
+                            <input type="search" placeholder="Buscar Usuario">
+                            <a href="#" class="searchbar-clear"></a>
+                        </div>
+                        <a href="#" class="searchbar-cancel">Cancel</a>
+                    </form>
+                    <div class="searchbar-overlay"></div>
+                    <div class="page-content ptr-content-other pull-to-refresh-content" data-ptr-distance="55">
+                        <div class="pull-to-refresh-layer">
+                            <div class="preloader"></div>
+                            <div class="pull-to-refresh-arrow"></div>
+                        </div>
+                        <div class="content-block searchbar-not-found">No se encontro en la base de datos.</div>
+                        <div class="list-block list-block-search searchbar-found">
+                            <ul>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="./libs/wd/icon/usr/m/icon.128.png" height="40"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">AL56AF50</div>
+                                            <div class="item-after">Admin</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="./libs/wd/icon/usr/m/icon.128.png" height="40"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Alexltx</div>
+                                            <div class="item-after">Admin</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="./libs/wd/icon/usr/f/icon.128.png" height="40"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">AliciaLove14</div>
+                                            <div class="item-after">Admin</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="./libs/wd/icon/usr/f/icon.128.png" height="40"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">ChloeNozek</div>
+                                            <div class="item-after">Admin</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="./libs/wd/icon/usr/f/icon.128.png" height="40"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">MartinaRC</div>
+                                            <div class="item-after">Admin</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="list-block-label">List block label text goes here</div>
                         </div>
                     </div>
                 </div>
@@ -220,22 +261,13 @@
     <div class="popup">
         <div class="view popup-view"></div>
     </div>
-    <script type="text/template" id="versionPage">
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="center">My Page</div>
-            </div>
-        </div>
-        <div class="page" data-page="js-generate-version">
-            <div class="page-content">
-                <p>Here comes page content</p>
-            </div>
-        </div>
-    </script>
     <script src="./libs/ext/framework7.min.js"></script>
     <script src="./libs/wd/wd.js"></script>
     <script src="./libs/wd/database.js"></script>
-    <script src="./libs/wd/controllers/options/animations/anims.js"></script>
+    <script src="./libs/wd/controllers/options/animations/progressbar.js"></script>
+    <script src="./libs/wd/controllers/options/animations/pulltorefresh.js"></script>
+    <script src="./libs/wd/controllers/options/animations/preloader.js"></script>
+    <script src="./libs/wd/controllers/options/animations/infinitescroll.js"></script>
     <script src="./libs/wd/controllers/views/generate.js"></script>
 </body>
 
