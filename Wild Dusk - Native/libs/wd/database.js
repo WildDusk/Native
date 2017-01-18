@@ -106,8 +106,8 @@ var LocalDb = {
           return n;
         },
         features: ["Mejoras en esta actualizacion:", "Inicio de Sesion forzado.", "Nueva vista. Informacion de usuario generada en carga.", "Administracion de usuario por medio de uuid.", "Inicio de sesion requerido para ejecutar algunas funciones.", "Nuevos controladores integrados."],
-        changes: ["- Batch autorun.inf eliminado.", "Permisos de acceso explicitos.", "Nueva interfaz de usuario.", "Manipulacion de usuarios por medio de uuid."],
-        info: ["Esta actualizacion trae nuevas funcionalidades y mejoras en la seguridad de la aplicacion para los usuarios.", "Se les fuerza a los usuarios a iniciar sesion antes de proceder a la pagina de control de cuentas.", "Se han agregado nuevos controladores de usuarios para la manipulacion de sus actividades."]
+        changes: ["- Batch autorun.inf eliminado.", "Permisos de acceso explicitos.", "Nueva interfaz de usuario.", "Control de usuarios con uuid."],
+        info: ["Esta actualizacion trae nuevas funcionalidades y mejoras en la seguridad de la aplicacion para los usuarios. Se les fuerza a los usuarios a iniciar sesion antes de proceder a la pagina de control de cuentas. Se han agregado nuevos controladores de usuarios para la manipulacion de sus actividades."]
       },
       Marble: {
         vName: "Marble",
@@ -126,7 +126,7 @@ var LocalDb = {
           var n = d.toLocaleDateString();
           return n;
         },
-        features: ["Mejoras en esta actualizacion:", "Inicio de Sesion habilitado.", "Proceso de verificacion de Usuario mejorado.", "Permisos de rangos en progreso.", "Controladores de usuario mejorados.", "Proceso de Cache introducido. (Beta)", "Error de notificacion reparado.", "Errores y estabilidad mejorada.", "Actualizados controladores basicos."],
+        features: ["Mejoras en esta actualizacion:", "Inicio de Sesion habilitado.", "Verificacion de Usuario mejorado.", "Permisos de rangos en progreso.", "Controladores de usuario mejorados.", "Proceso de Cache introducido. (Beta)", "Error de notificacion reparado.", "Errores y estabilidad mejorada.", "Actualizados controladores basicos."],
         changes: ["- Acceso a usuarios por medio de LogIn.", "Manejo de cuentas de usuario en la base de datos.", "Controlador de eventos en usuarios.", "Almacenamiento en Cache temporal.", "Terminada la vista de usuario."],
         info: ["La actualizacion de Usuarios! Esta actualizacion aumenta la seguridad y el manejo de usuarios, inspirado para el uso de usuarios, nuevas caracteristicas seran agregadas en las siguientes actualizaciones."]
       },
@@ -148,8 +148,8 @@ var LocalDb = {
           return n;
         },
         features: ["Mejoras en esta actualizacion:", "Inicio de Sesion para Usuarios agregado.", "Funciones de Sistema habilitados.", "Administrador de errores inicializado.", "Agregadas notificaciones en la aplicacion.", "Almacenamiento en base de datos habilitado.", "Mejoras basicas en la estabilidad."],
-        changes: ["- Administracion por medio de base de datos.", ""],
-        info: []
+        changes: ["- Administracion por medio de base de datos. Habilitado el inicio de sesion.", "Notificaciones dentro de la aplicacion (BETA).", "Acceso a la base de datos."],
+        info: ["Primer lanzamiento BETA del proyecto Wild Dusk. Nuevas funcionalidades agregadas."]
       },
       Core: {
         vName: "Core",
@@ -169,8 +169,8 @@ var LocalDb = {
           return n;
         },
         features: ["Mejoras en esta actualizacion:", "Debugging en consola.", "Acceso a funciones en fase beta.", "Controladores basicos de usuario agregados.", "Base de datos integrada. (No habilitada)", "Version estable. Sin depurar."],
-        changes: [],
-        info: []
+        changes: ["Desconocido"],
+        info: ["Desconocido"]
       }
     }
   }

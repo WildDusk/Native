@@ -26,7 +26,6 @@ var Animations = {
     preloader: function () {
       wd.showPreloader();
       setTimeout(function () {
-        document.getElementById('static-hide').style.display = 'block';
         wd.hidePreloader();
       }, 1900);
     }
@@ -63,3 +62,5 @@ ptrContent.on('ptr:pullend', function () {
   }, 2000);
 
 });
+
+function showandhide() {}
