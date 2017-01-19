@@ -107,7 +107,7 @@ function showAllVersion() {
     '<div class="item-title-row">' +
     '<div class="item-title">' + LocalDb.Version.get.Submarine.vName + '</div>' +
     '</div>' +
-    '<div class="item-subtitle version-name">Version ' + LocalDb.Version.get.Submarine.vParse + '</div>' +
+    '<div class="link version-name">Version ' + LocalDb.Version.get.Submarine.vParse + '</div>' +
     '</div>' +
     '</a>' +
     '</li>' +
@@ -120,7 +120,7 @@ function showAllVersion() {
     '<div class="item-title-row">' +
     '<div class="item-title">' + LocalDb.Version.get.Feather.vName + '</div>' +
     '</div>' +
-    '<div class="item-subtitle version-name">Version ' + LocalDb.Version.get.Feather.vParse + '</div>' +
+    '<div class="link version-name">Version ' + LocalDb.Version.get.Feather.vParse + '</div>' +
     '</div>' +
     '</a>' +
     '</li>' +
@@ -133,7 +133,7 @@ function showAllVersion() {
     '<div class="item-title-row">' +
     '<div class="item-title">' + LocalDb.Version.get.Marble.vName + '</div>' +
     '</div>' +
-    '<div class="item-subtitle version-name">Version ' + LocalDb.Version.get.Marble.vParse + '</div>' +
+    '<div class="link version-name">Version ' + LocalDb.Version.get.Marble.vParse + '</div>' +
     '</div>' +
     '</a>' +
     '</li>' +
@@ -146,7 +146,7 @@ function showAllVersion() {
     '<div class="item-title-row">' +
     '<div class="item-title">' + LocalDb.Version.get.Bucket.vName + '</div>' +
     '</div>' +
-    '<div class="item-subtitle version-name">Version ' + LocalDb.Version.get.Bucket.vParse + '</div>' +
+    '<div class="link version-name">Version ' + LocalDb.Version.get.Bucket.vParse + '</div>' +
     '</div>' +
     '</a>' +
     '</li>' +
@@ -159,7 +159,7 @@ function showAllVersion() {
     '<div class="item-title-row">' +
     '<div class="item-title">' + LocalDb.Version.get.Core.vName + '</div>' +
     '</div>' +
-    '<div class="item-subtitle version-name">Version' + LocalDb.Version.get.Core.vParse + '</div>' +
+    '<div class="link version-name">Version' + LocalDb.Version.get.Core.vParse + '</div>' +
     '</div>' +
     '</a>' +
     '</li>' +
