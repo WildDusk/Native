@@ -3,7 +3,6 @@
 function userCard(user) {
 
   if (LocalDb.Users.Located[user]) {
-
     var card = {
       name: LocalDb.Users.Located[user].username,
       rank: function () {
@@ -20,10 +19,13 @@ function userCard(user) {
         } else {
           return "Unknow";
         }
-      }
+      },
+      level: LocalDb.Users.Located[user].level
     };
+    progressbar()
+    preloader();
     var cardSend =
-      '<div class="popup popup-unique" data-popup="' + card.name + '">' +
+      '<div class="popup popup-user-unique" data-popup="' + card.name + '">' +
       '<div class="navbar">' +
       '<div class="navbar-inner">' +
       '<div class="left"><a href="" class="link back" onclick="wd.hidePreloader();wd.closeModal();"><i class="icon icon-back"></i>Aceptar</a></div>' +
@@ -31,7 +33,7 @@ function userCard(user) {
       '<div class="right"><i class="icon fa fa-address-card-o"></i></div>' +
       '</div>' +
       '</div>' +
-      '<div class="list-block">' +
+      '<div class="list-block" id="user-card-menu">' +
       '<ul>' +
       '<li class="item-content">' +
       '<div class="item-media">' +
@@ -53,17 +55,18 @@ function userCard(user) {
       '</li>' +
       '<li class="item-content">' +
       '<div class="item-media">' +
-      '<i class="icon fa fa-bullseye"></i>' +
+      '<i class="icon fa fa-archive"></i>' +
       '</div>' +
       '<div class="item-inner">' +
-      '<div class="item-title">Rango</div>' +
-      '<div class="item-after">' + card.rank() + '</div>' +
+      '<div class="item-title">Nivel</div>' +
+      '<div class="item-after">' + card.level + '</div>' +
       '</div>' +
       '</li>' +
       '</ul>' +
       '</div>' +
       '</div>';
-    return wd.popup(cardSend);
+    wd.popup(cardSend, true);
+    showContent('user-card-menu', 1700);
   } else {
     return console.error("Unexpected error has ocurred.");
   }

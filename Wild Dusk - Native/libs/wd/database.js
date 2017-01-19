@@ -6,6 +6,7 @@ var LocalDb = {
         username: "AL56AF50",
         password: "Native",
         rank: 4,
+        level: 4,
         gen: {
           key: "607678aa7d7526cbf3b3dac1651c9f72",
           uuid: "",
@@ -17,6 +18,7 @@ var LocalDb = {
         username: "Alexltx",
         password: "Alextri00",
         rank: 4,
+        level: 4,
         gen: {
           key: "317f75c6f70ce2a03cc9946b41cde563",
           uuid: "",
@@ -28,6 +30,7 @@ var LocalDb = {
         username: "AliciaLove14",
         password: "AliciaLove821",
         rank: 2,
+        level: 2,
         gen: {
           key: "d3232772321db22c403513cbd74b8df4",
           uuid: "",
@@ -39,6 +42,7 @@ var LocalDb = {
         username: "ChloeNozek",
         password: "TeAmoAlvarito7u7",
         rank: 2,
+        level: 2,
         gen: {
           key: "0c6d7a16e21a275f04a77a4e3ea9399d4",
           uuid: "",
@@ -50,6 +54,7 @@ var LocalDb = {
         username: "MartinaRC",
         password: "marturc14",
         rank: 2,
+        level: 2,
         gen: {
           key: "6943a881d2b2af1eec9194acaf6977e23",
           uuid: "",
@@ -61,6 +66,7 @@ var LocalDb = {
         username: "remoteconsole",
         password: "rcon1234",
         rank: 3,
+        level: 2,
         gen: {
           key: "",
           uuid: "",
