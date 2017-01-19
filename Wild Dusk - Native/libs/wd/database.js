@@ -38,7 +38,7 @@ var LocalDb = {
       ChloeNozek: {
         username: "ChloeNozek",
         password: "TeAmoAlvarito7u7",
-        rank: 3,
+        rank: 2,
         gen: {
           key: "0c6d7a16e21a275f04a77a4e3ea9399d4",
           uuid: "",
@@ -49,7 +49,7 @@ var LocalDb = {
       MartinaRC: {
         username: "MartinaRC",
         password: "marturc14",
-        rank: 3,
+        rank: 2,
         gen: {
           key: "6943a881d2b2af1eec9194acaf6977e23",
           uuid: "",
@@ -64,7 +64,7 @@ var LocalDb = {
         gen: {
           key: "",
           uuid: "",
-          id: "------------",
+          id: "----------------------------------",
           s: "b"
         }
       }

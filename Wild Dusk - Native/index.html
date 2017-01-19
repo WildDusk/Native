@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="device-width, initial-scale:1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="shortcut icon" href="./libs/wd/icon/icon.256.png" />
     <link rel="stylesheet" href="./libs/ext/framework7.ios.min.css" />
     <link rel="stylesheet" href="./libs/ext/framework7.ios.colors.min.css" />
@@ -26,7 +28,7 @@
             </div>
             <div class="pages navbar-fixed">
                 <div data-page="index" class="page">
-                    <div class="page-content ptr-content-index pull-to-refresh-content" data-ptr-distance="55">
+                    <div class="page-content ptr-content-index pull-to-refresh-content infinite-scroll" data-distance="100" data-ptr-distance="55">
                         <!-- Default pull to refresh layer-->
                         <div class="pull-to-refresh-layer">
                             <div class="preloader"></div>
@@ -172,7 +174,7 @@
                         <a href="#" class="searchbar-cancel">Cancel</a>
                     </form>
                     <div class="searchbar-overlay"></div>
-                    <div class="page-content ptr-content-other pull-to-refresh-content" data-ptr-distance="55">
+                    <div class="page-content ptr-content-other pull-to-refresh-content infinite-scroll" data-distance="100" data-ptr-distance="55">
                         <div class="pull-to-refresh-layer">
                             <div class="preloader"></div>
                             <div class="pull-to-refresh-arrow"></div>
@@ -181,7 +183,7 @@
                         <div class="list-block list-block-search searchbar-found">
                             <ul>
                                 <li>
-                                    <a href="#" class="item-link item-content">
+                                    <a href="#" class="item-link item-content" onclick="userCard('AL56AF50');">
                                         <div class="item-media"><img src="./libs/wd/icon/usr/m/icon.128.png" height="40"></div>
                                         <div class="item-inner">
                                             <div class="item-title">AL56AF50</div>
@@ -190,7 +192,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="item-link item-content">
+                                    <a href="#" class="item-link item-content" onclick="userCard('Alexltx');">
                                         <div class="item-media"><img src="./libs/wd/icon/usr/m/icon.128.png" height="40"></div>
                                         <div class="item-inner">
                                             <div class="item-title">Alexltx</div>
@@ -199,29 +201,29 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="item-link item-content">
+                                    <a href="#" class="item-link item-content" onclick="userCard('AliciaLove14');">
                                         <div class="item-media"><img src="./libs/wd/icon/usr/f/icon.128.png" height="40"></div>
                                         <div class="item-inner">
                                             <div class="item-title">AliciaLove14</div>
-                                            <div class="item-after">Admin</div>
+                                            <div class="item-after">Moderator</div>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="item-link item-content">
+                                    <a href="#" class="item-link item-content" onclick="userCard('ChloeNozek');">
                                         <div class="item-media"><img src="./libs/wd/icon/usr/f/icon.128.png" height="40"></div>
                                         <div class="item-inner">
                                             <div class="item-title">ChloeNozek</div>
-                                            <div class="item-after">Admin</div>
+                                            <div class="item-after">Moderator</div>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="item-link item-content">
+                                    <a href="#" class="item-link item-content" onclick="userCard('MartinaRC');">
                                         <div class="item-media"><img src="./libs/wd/icon/usr/f/icon.128.png" height="40"></div>
                                         <div class="item-inner">
                                             <div class="item-title">MartinaRC</div>
-                                            <div class="item-after">Admin</div>
+                                            <div class="item-after">Moderator</div>
                                         </div>
                                     </a>
                                 </li>
@@ -268,7 +270,8 @@
     <script src="./libs/wd/controllers/options/animations/pulltorefresh.js"></script>
     <script src="./libs/wd/controllers/options/animations/preloader.js"></script>
     <script src="./libs/wd/controllers/options/animations/infinitescroll.js"></script>
-    <script src="./libs/wd/controllers/views/generate.js"></script>
+    <script src="./libs/wd/controllers/views/versions.js"></script>
+    <script src="./libs/wd/controllers/views/user.js"></script>
 </body>
 
 </html>
