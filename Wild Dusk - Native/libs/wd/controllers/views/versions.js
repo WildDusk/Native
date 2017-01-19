@@ -5,7 +5,6 @@ function versionPage(vName) {
 
   progressbar();
   if (LocalDb.Version.get[vName]) {
-    preloader()
     var gen = {
       version: LocalDb.Version.get[vName].vParse,
       name: LocalDb.Version.get[vName].vName,
@@ -16,8 +15,9 @@ function versionPage(vName) {
       api: LocalDb.Version.get[vName].vValue.Minor
     }
     send();
+    progressbar();
+    preloader();
   } else if (LocalDb.Version.get.all[vName]) {
-    preloader()
     var gen = {
       version: LocalDb.Version.get[LocalDb.Version.get.all[vName]].vParse,
       name: LocalDb.Version.get[LocalDb.Version.get.all[vName]].vName,
@@ -38,8 +38,8 @@ function versionPage(vName) {
 
   function send() {
 
-    var showV =
-      '<div class="popup popup-unique" data-popup="' + gen.name + '">' +
+    var show =
+      '<div class="popup popup-versions-unique" data-popup="' + gen.name + '">' +
       '<div class="navbar">' +
       '<div class="navbar-inner">' +
       '<div class="left"><a href="" class="link back" onclick="wd.hidePreloader();wd.closeModal();"><i class="icon icon-back"></i>Aceptar</a></div>' +
@@ -47,7 +47,7 @@ function versionPage(vName) {
       '<div class="right">' + gen.version + '</div>' +
       '</div>' +
       '</div>' +
-      '<div class="timeline" id="temp-hide">' +
+      '<div class="timeline" id="app-versions-unique">' +
       '<div class="timeline-item">' +
       '<div class="timeline-item-date">' + gen.version + '</div>' +
       '<div class="timeline-item-divider"></div>' +
@@ -78,15 +78,17 @@ function versionPage(vName) {
       '</div>' +
       '</div>';
 
-    return wd.popup(showV);
+    wd.popup(show, true);
+    showContent('app-versions-unique', 1700);
+    return show;
   }
 }
 
 function showAllVersion() {
   progressbar();
-  preloader()
+  preloader();
   var page =
-    '<div class="popup popup-allVersions" data-popup="allvrs">' +
+    '<div class="popup popup-versions-all" data-popup="allvrs">' +
     '<div class="navbar">' +
     '<div class="navbar-inner">' +
     '<div class="left"><a href="" class="link back" onclick="wd.hidePreloader();wd.closeModal();"><i class="icon icon-back"></i>Aceptar</a></div>' +
@@ -94,7 +96,7 @@ function showAllVersion() {
     '<div class="right">Versions</div>' +
     '</div>' +
     '</div>' +
-    '<div class="list-block media-list" id="temp-hide-f">' +
+    '<div class="list-block media-list" id="app-versions-all">' +
     '<ul>' +
     '<li>' +
     '<a class="item-content item-link" onclick="versionPage(0);showandhide();">' +
@@ -105,7 +107,7 @@ function showAllVersion() {
     '<div class="item-title-row">' +
     '<div class="item-title">' + LocalDb.Version.get.Submarine.vName + '</div>' +
     '</div>' +
-    '<div class="item-subtitle version-name">Version ' + LocalDb.Version.get.Submarine.vParse + '</div>' +
+    '<div class="link version-name">Version ' + LocalDb.Version.get.Submarine.vParse + '</div>' +
     '</div>' +
     '</a>' +
     '</li>' +
@@ -118,7 +120,7 @@ function showAllVersion() {
     '<div class="item-title-row">' +
     '<div class="item-title">' + LocalDb.Version.get.Feather.vName + '</div>' +
     '</div>' +
-    '<div class="item-subtitle version-name">Version ' + LocalDb.Version.get.Feather.vParse + '</div>' +
+    '<div class="link version-name">Version ' + LocalDb.Version.get.Feather.vParse + '</div>' +
     '</div>' +
     '</a>' +
     '</li>' +
@@ -131,7 +133,7 @@ function showAllVersion() {
     '<div class="item-title-row">' +
     '<div class="item-title">' + LocalDb.Version.get.Marble.vName + '</div>' +
     '</div>' +
-    '<div class="item-subtitle version-name">Version ' + LocalDb.Version.get.Marble.vParse + '</div>' +
+    '<div class="link version-name">Version ' + LocalDb.Version.get.Marble.vParse + '</div>' +
     '</div>' +
     '</a>' +
     '</li>' +
@@ -144,7 +146,7 @@ function showAllVersion() {
     '<div class="item-title-row">' +
     '<div class="item-title">' + LocalDb.Version.get.Bucket.vName + '</div>' +
     '</div>' +
-    '<div class="item-subtitle version-name">Version ' + LocalDb.Version.get.Bucket.vParse + '</div>' +
+    '<div class="link version-name">Version ' + LocalDb.Version.get.Bucket.vParse + '</div>' +
     '</div>' +
     '</a>' +
     '</li>' +
@@ -157,12 +159,14 @@ function showAllVersion() {
     '<div class="item-title-row">' +
     '<div class="item-title">' + LocalDb.Version.get.Core.vName + '</div>' +
     '</div>' +
-    '<div class="item-subtitle version-name">Version' + LocalDb.Version.get.Core.vParse + '</div>' +
+    '<div class="link version-name">Version' + LocalDb.Version.get.Core.vParse + '</div>' +
     '</div>' +
     '</a>' +
     '</li>' +
     '</ul>' +
     '</div>' +
     '</div>';
-  wd.popup(page);
+  wd.popup(page, true);
+  showContent('app-versions-all', 1700);
+  return page;
 }
